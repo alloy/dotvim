@@ -61,6 +61,8 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
+map <leader>f :FuzzyFinderTextMate<cr>
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 set list
@@ -68,3 +70,8 @@ set list
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby set foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+
+" Make selection with the shift key work as in any Mac app
+if has("gui_macvim")
+  let macvim_skip_hig_shift_movement = 1
+endif
