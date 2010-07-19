@@ -502,3 +502,25 @@ snippet tas
 	task :${2:task_name => [:dependent, :tasks]} do
 		${3}
 	end
+# spec
+snippet spechelper
+	require File.expand_path("../${1}spec_helper", __FILE__)
+	${2}
+snippet de
+	describe "${1:Spec description}" do
+		it "${2:does something}" do
+			${3}
+		end
+	end
+snippet it
+	it "${1:does something}" do
+		${2}
+	end
+snippet be
+	before do
+		${1}
+	end
+snippet af
+	after do
+		${1}
+	end
