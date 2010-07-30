@@ -74,4 +74,7 @@ set list
 " Make selection with the shift key work as in any Mac app
 if has("gui_macvim")
   let macvim_skip_hig_shift_movement = 1
+
+  " more TextMate/Mac like command mappings
+  map <D-/> ,c<Space>
 endif
