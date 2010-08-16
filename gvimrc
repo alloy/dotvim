@@ -13,3 +13,8 @@ set lines=50 columns=155          " Window dimensions.
 
 " Save all open buffers when MacVim loses focus
 au FocusLost * wa
+
+if has("gui_macvim")
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> <Plug>PeepOpen
+end
