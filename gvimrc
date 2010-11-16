@@ -15,6 +15,17 @@ set lines=50 columns=155          " Window dimensions.
 au FocusLost * wa
 
 if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
+  macmenu &File.Open\ Tab\.\.\. key=<nop>
+  macmenu &File.New\ Tab key=<D-S-t>
   map <D-t> <Plug>PeepOpen
+
+  " bind command-] to shift right
+  nmap <D-]> >>
+  vmap <D-]> >>
+  imap <D-]> <C-O>>>
+
+  " bind command-[ to shift left
+  nmap <D-[> <<
+  vmap <D-[> <<
+  imap <D-[> <C-O><<
 end
