@@ -1,0 +1,22 @@
+# spec
+snippet spechelper
+	(load "spec_helper")
+	${1}
+snippet de
+	(describe "${1:Spec description}" `(
+		(it "${2:does something}" (do ()
+			${3}
+		))
+	))
+snippet it
+	(it "${1:does something}" (do ()
+		${2}
+	))
+snippet be
+	(before (do ()
+		${1}
+	))
+snippet af
+	(after (do ()
+		${1}
+	))
