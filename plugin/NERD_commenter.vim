@@ -469,6 +469,8 @@ function s:SetUpForNewFiletype(filetype, forceReset)
         call s:MapDelimiters('#', '')
     elseif a:filetype ==? "ntp"
         call s:MapDelimiters('#', '')
+    elseif a:filetype ==? "nu"
+        call s:MapDelimiters(';', '')
     elseif a:filetype ==? "objc"
         call s:MapDelimitersWithAlternative('//','', '/*','*/')
     elseif a:filetype ==? "objcpp"
@@ -575,6 +577,8 @@ function s:SetUpForNewFiletype(filetype, forceReset)
         call s:MapDelimitersWithAlternative('//','', '/*','*/')
     elseif a:filetype ==? "scilab"
         call s:MapDelimiters('//', '')
+    elseif a:filetype ==? "scheme"
+        call s:MapDelimiters(';', '')
     elseif a:filetype ==? "scsh"
         call s:MapDelimiters(';', '')
     elseif a:filetype ==? "sed"
