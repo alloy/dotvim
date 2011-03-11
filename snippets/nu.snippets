@@ -1,6 +1,7 @@
 # spec
 snippet spechelper
-	(load "spec_helper")
+	(load "SpecHelper")
+	
 	${1}
 snippet de
 	(describe "${1:Spec description}" `(
@@ -19,4 +20,8 @@ snippet be
 snippet af
 	(after (do ()
 		${1}
+	))
+snippet wa
+	(wait ${1:0.1} (do ()
+		${2}
 	))
