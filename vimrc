@@ -62,7 +62,7 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
-map <leader>f :FuzzyFinderTextMate<cr>
+" map <leader>f :FuzzyFinderTextMate<cr>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
