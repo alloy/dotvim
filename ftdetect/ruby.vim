@@ -27,3 +27,6 @@ au BufNewFile,BufRead .autotest				set filetype=ruby
 
 " eRuby
 au BufNewFile,BufRead *.erb,*.rhtml			set filetype=eruby
+
+" CocoaPods
+au BufNewFile,BufRead Podfile				set filetype=ruby
