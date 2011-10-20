@@ -52,7 +52,7 @@ def output_file(fname=None):
                         'PreferencePanes', 'QTKit', 'ScreenSaver',
                         'SyncServices', 'WebKit')
     iphone_frameworks = ('UIKit', 'GameKit')
-    iphone_sdk_path = '/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk'
+    iphone_sdk_path = '/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk'
     headers_and_frameworks = find_headers('', cocoa_frameworks).items() + \
                              find_headers(iphone_sdk_path, iphone_frameworks).items()
 

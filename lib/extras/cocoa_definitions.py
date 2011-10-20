@@ -26,7 +26,7 @@ def default_headers():
                         'AddressBook', 'CoreData', 'PreferencePanes', 'QTKit',
                         'ScreenSaver', 'SyncServices', 'WebKit')
     iphone_frameworks = ('UIKit', 'GameKit')
-    iphone_sdk_path = '/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk'
+    iphone_sdk_path = '/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk'
     return find_headers('', cocoa_frameworks) + \
            find_headers(iphone_sdk_path, iphone_frameworks)
 
