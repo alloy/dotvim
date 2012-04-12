@@ -36,8 +36,7 @@ set visualbell                    " No beeping.
 
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
 " UNCOMMENT TO USE
 setlocal expandtab
