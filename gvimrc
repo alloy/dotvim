@@ -17,7 +17,9 @@ au FocusLost * wa
 if has("gui_macvim")
   macmenu &File.Open\ Tab\.\.\. key=<nop>
   macmenu &File.New\ Tab key=<D-S-t>
-  map <D-t> <Plug>PeepOpen
+
+  " map <D-t> <Plug>PeepOpen
+  nmap <D-k> :!open dash://<C-R><C-W><cr><cr>
 
   " bind command-] to shift right
   nmap <D-]> >>
