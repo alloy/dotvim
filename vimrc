@@ -3,6 +3,23 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
+" ### Configure Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" ### let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+" ### original repos on github
+" Bundle 'tpope/vim-fugitive'
+" Bundle 'Lokaltog/vim-easymotion'
+" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" vim-scripts repos
+" Bundle 'L9'
+" Bundle 'FuzzyFinder'
+" ### non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+" ### End: Configure vundle
+
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
