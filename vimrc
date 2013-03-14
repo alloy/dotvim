@@ -10,6 +10,7 @@ call vundle#rc()
 " ### let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 " ### original repos on github
+Bundle 'Rip-Rip/clang_complete'
 " Bundle 'tpope/vim-fugitive'
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
