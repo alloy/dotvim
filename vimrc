@@ -7,13 +7,16 @@ set nocompatible                  " Must come first because it changes other opt
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-" ### let Vundle manage Vundle
 Bundle 'gmarik/vundle'
-" ### original repos on github
+" ##### Completions
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
 Bundle 'Rip-Rip/clang_complete'
-" Bundle 'tpope/vim-fugitive'
+" ##### Navigate
+Bundle 'majutsushi/tagbar'
+" ##### External tool integration
+Bundle 'tpope/vim-fugitive'
+
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
@@ -110,6 +113,45 @@ let g:clang_complete_macros=1
 "let g:clang_complete_patterns=0
 " show diagnostics
 nnoremap <Leader>q :call g:ClangUpdateQuickFix()<CR>
+
+" ### Tagbar
+"
+" Install new ctags with objc support: $ brew install ctags --HEAD
+"
+" Add a template definition for Objective-C
+let g:tagbar_type_objc = {
+    \ 'ctagstype' : 'ObjectiveC',
+    \ 'kinds'     : [
+        \ 'i:interface',
+        \ 'I:implementation',
+        \ 'p:Protocol',
+        \ 'm:Object_method',
+        \ 'c:Class_method',
+        \ 'v:Global_variable',
+        \ 'F:Object field',
+        \ 'f:function',
+        \ 'p:property',
+        \ 't:type_alias',
+        \ 's:type_structure',
+        \ 'e:enumeration',
+        \ 'M:preprocessor_macro',
+    \ ],
+    \ 'sro'        : ' ',
+    \ 'kind2scope' : {
+        \ 'i' : 'interface',
+        \ 'I' : 'implementation',
+        \ 'p' : 'Protocol',
+        \ 's' : 'type_structure',
+        \ 'e' : 'enumeration'
+    \ },
+    \ 'scope2kind' : {
+        \ 'interface'      : 'i',
+        \ 'implementation' : 'I',
+        \ 'Protocol'       : 'p',
+        \ 'type_structure' : 's',
+        \ 'enumeration'    : 'e'
+    \ }
+\ }
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby set foldmethod=syntax
