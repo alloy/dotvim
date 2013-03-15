@@ -10,6 +10,7 @@ call vundle#rc()
 " ### let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 " ### original repos on github
+Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
 Bundle 'Rip-Rip/clang_complete'
 " Bundle 'tpope/vim-fugitive'
