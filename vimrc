@@ -14,6 +14,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Rip-Rip/clang_complete'
 " ##### Navigate
 Bundle 'majutsushi/tagbar'
+Bundle 'mbadran/headlights'
 " ##### External tool integration
 Bundle 'tpope/vim-fugitive'
 
@@ -113,6 +114,14 @@ let g:clang_complete_macros=1
 "let g:clang_complete_patterns=0
 " show diagnostics
 nnoremap <Leader>q :call g:ClangUpdateQuickFix()<CR>
+
+" ### Headlights
+let g:headlights_smart_menus = 1
+let g:headlights_show_commands = 1
+let g:headlights_show_mappings = 1
+let g:headlights_show_abbreviations = 1
+let g:headlights_show_functions = 1
+let g:headlights_show_highlights = 1
 
 " ### Tagbar
 "
