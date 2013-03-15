@@ -10,6 +10,7 @@ call vundle#rc()
 " ### let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 " ### original repos on github
+Bundle 'SirVer/ultisnips'
 Bundle 'Rip-Rip/clang_complete'
 " Bundle 'tpope/vim-fugitive'
 " Bundle 'Lokaltog/vim-easymotion'
@@ -88,15 +89,15 @@ set list
 
 " clang_complete settings
 let g:clang_debug=1
-"let g:clang_auto_select=1
-"let g:clang_complete_auto=1
+let g:clang_auto_select=1
+let g:clang_complete_auto=1
 let g:clang_complete_copen=1
 let g:clang_hl_errors=1
 let g:clang_close_preview=1
 let g:clang_periodic_quickfix=0
 let g:clang_trailing_placeholder=1
 let g:clang_snippets=1
-let g:clang_snippets_engine="clang_complete"
+let g:clang_snippets_engine="ultisnips"
 "let g:clang_conceal_snippets=1
 let g:clang_use_library=1
 let g:clang_exec="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
