@@ -41,10 +41,10 @@ function! ObjectiveCFoldText()
     let list  = matchlist(text, '^' . space . '\([-+]\)' . space . type . space . '\(.\+\)')
     " * instance or class method
     let mtype = get(list, 1)
-    " * selector: remove arguments, leaving only parameters with colons
-    let rest  = substitute(StripRight(get(list, 2)), arg . space, '', 'g')
+    " * remove arguments, leaving only parameters with colons
+    let sel   = substitute(StripRight(get(list, 2)), arg . space, '', 'g')
 
-    return ' ' . mtype . ' ' . rest . ' '
+    return ' ' . mtype . ' ' . sel . ' '
   else
     return StripRight(line) . ' '
   endif
