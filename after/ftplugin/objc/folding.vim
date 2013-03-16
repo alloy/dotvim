@@ -31,6 +31,7 @@ function! ObjectiveCFoldText()
     " get complete contents of method
     let text  = join(getline(v:foldstart, v:foldend), ' ')
     " remove everything after signature
+    " TODO this can be optimized by only reading from foldstart upto these.
     let text  = substitute(text, '[;{].\+$', '', '')
 
     let space = '\s*'
