@@ -161,6 +161,9 @@ let g:tagbar_type_objc = {
     \ }
 \ }
 
+" Always expand folds by default
+set foldlevel=99
+
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby set foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
