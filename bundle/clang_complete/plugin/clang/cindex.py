@@ -1634,7 +1634,8 @@ class ClangObject(object):
     the ctypes library and the Clang CIndex library.
     """
     def __init__(self, obj):
-        assert isinstance(obj, c_object_p) and obj
+	assert obj
+        assert isinstance(obj, c_object_p)
         self.obj = self._as_parameter_ = obj
 
     def from_param(self):
@@ -1838,7 +1839,8 @@ class CCRStructure(Structure):
 
 class CodeCompletionResults(ClangObject):
     def __init__(self, ptr):
-        assert isinstance(ptr, POINTER(CCRStructure)) and ptr
+	assert ptr
+        assert isinstance(ptr, POINTER(CCRStructure))
         self.ptr = self._as_parameter_ = ptr
 
     def from_param(self):
@@ -2015,7 +2017,7 @@ class TranslationUnit(ClangObject):
                                     len(args), unsaved_array,
                                     len(unsaved_files), options)
 
-        if ptr is None:
+        if not ptr:
             raise TranslationUnitLoadError("Error parsing translation unit.")
 
         return cls(ptr, index=index)
@@ -2037,7 +2039,7 @@ class TranslationUnit(ClangObject):
             index = Index.create()
 
         ptr = conf.lib.clang_createTranslationUnit(index, filename)
-        if ptr is None:
+        if not ptr:
             raise TranslationUnitLoadError(filename)
 
         return cls(ptr=ptr, index=index)

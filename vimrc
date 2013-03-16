@@ -105,7 +105,6 @@ let g:clang_snippets=1
 let g:clang_snippets_engine="ultisnips"
 "let g:clang_conceal_snippets=1
 let g:clang_use_library=1
-let g:clang_exec="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
 let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"
 "let g:clang_user_options=""
 let g:clang_auto_user_options="compile_commands.json, path, .clang_complete"
