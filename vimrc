@@ -17,14 +17,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'mbadran/headlights'
 " ##### External tool integration
 Bundle 'tpope/vim-fugitive'
-
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" vim-scripts repos
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
-" ### non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
 " ### End: Configure vundle
 
 syntax enable                     " Turn on syntax highlighting.
