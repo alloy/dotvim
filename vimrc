@@ -167,3 +167,8 @@ if has("gui_macvim")
   " more TextMate/Mac like command mappings
   map <D-/> ,c<Space>
 endif
+
+" enable per-directory .vimrc files
+set exrc
+" disable unsafe commands in local .vimrc files
+set secure
