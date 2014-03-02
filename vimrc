@@ -8,6 +8,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
+" ##### Syntax
+Bundle 'slim-template/vim-slim'
 " ##### Completions
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
