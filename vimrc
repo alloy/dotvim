@@ -6,20 +6,21 @@ set nocompatible                  " Must come first because it changes other opt
 " ### Configure Vundle
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+call vundle#begin()
+Plugin 'gmarik/vundle'
 " ##### Syntax
-Bundle 'slim-template/vim-slim'
+Plugin 'slim-template/vim-slim'
+Plugin 'kchmck/vim-coffee-script'
 " ##### Completions
-Bundle 'ervandew/supertab'
-Bundle 'SirVer/ultisnips'
-Bundle 'Rip-Rip/clang_complete'
+Plugin 'ervandew/supertab'
+Plugin 'SirVer/ultisnips'
+Plugin 'Rip-Rip/clang_complete'
 " ##### Navigate
-Bundle 'majutsushi/tagbar'
-Bundle 'mbadran/headlights'
+Plugin 'majutsushi/tagbar'
+Plugin 'mbadran/headlights'
 " ##### External tool integration
-Bundle 'tpope/vim-fugitive'
-" ### End: Configure vundle
+Plugin 'tpope/vim-fugitive'
+call vundle#end()
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
