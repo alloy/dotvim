@@ -11,6 +11,7 @@ Plugin 'gmarik/vundle'
 " ##### Syntax
 Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
 " ##### Completions
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
