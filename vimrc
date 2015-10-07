@@ -128,8 +128,12 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " ### Ctrlp.vim
 "
+function! CtrlPWithSearchText(search_text, ctrlp_command_end)
+    execute ':CtrlP' . a:ctrlp_command_end
+    call feedkeys(a:search_text)
+endfunction
 " Pre-fill current word
-nmap <silent> <c-k> :let g:ctrlp_default_input = expand('<cword>')<cr>:CtrlP<cr>
+nmap <c-k> :call CtrlPWithSearchText(expand('<cword>'), '')<cr>
 
 " ### Tagbar
 "
