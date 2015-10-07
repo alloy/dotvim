@@ -19,6 +19,7 @@ Plugin 'Rip-Rip/clang_complete'
 " ##### Navigate
 Plugin 'majutsushi/tagbar'
 Plugin 'mbadran/headlights'
+Plugin 'kien/ctrlp.vim'
 " ##### External tool integration
 Plugin 'tpope/vim-fugitive'
 call vundle#end()
