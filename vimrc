@@ -126,6 +126,11 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+" ### Ctrlp.vim
+"
+" Pre-fill current word
+nmap <silent> <c-k> :let g:ctrlp_default_input = expand('<cword>')<cr>:CtrlP<cr>
+
 " ### Tagbar
 "
 " Install new ctags with objc support: $ brew install ctags --HEAD
