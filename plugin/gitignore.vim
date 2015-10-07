@@ -6,6 +6,7 @@ if filereadable(filename)
         if line =~ '^#' | con | endif
         if line == '' | con  | endif
         if line =~ '^!' | con  | endif
+        if line == 'Pods' | con | endif " Do not ignore Pods directories
         if line =~ '/$' | let igstring .= "," . line . "*" | con | endif
         let igstring .= "," . line
     endfor
