@@ -118,6 +118,13 @@ let g:headlights_show_abbreviations = 1
 let g:headlights_show_functions = 1
 let g:headlights_show_highlights = 1
 
+" ### Ultisnips
+
+" Set ultiSnips triggers
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 " ### Tagbar
 "
 " Install new ctags with objc support: $ brew install ctags --HEAD
