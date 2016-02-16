@@ -14,7 +14,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mxw/vim-jsx'
 " ##### Completions
-Plugin 'justinj/vim-react-snippets'
+Plugin 'BlooJeans/vim-react-snippets' " ES6 fork of 'justinj/vim-react-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'Rip-Rip/clang_complete'
