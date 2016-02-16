@@ -12,7 +12,9 @@ Plugin 'gmarik/vundle'
 Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'mxw/vim-jsx'
 " ##### Completions
+Plugin 'justinj/vim-react-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'Rip-Rip/clang_complete'
@@ -134,6 +136,10 @@ function! CtrlPWithSearchText(search_text, ctrlp_command_end)
 endfunction
 " Pre-fill current word
 nmap <c-k> :call CtrlPWithSearchText(expand('<cword>'), '')<cr>
+
+" ### JSX
+"
+let g:jsx_ext_required = 0
 
 " ### Tagbar
 "
