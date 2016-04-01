@@ -13,6 +13,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mxw/vim-jsx'
+Plugin 'jparise/vim-graphql'
 " ##### Completions
 Plugin 'BlooJeans/vim-react-snippets' " ES6 fork of 'justinj/vim-react-snippets'
 Plugin 'ervandew/supertab'
