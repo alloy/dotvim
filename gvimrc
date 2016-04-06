@@ -12,7 +12,7 @@ set lines=50 columns=155          " Window dimensions.
 " set guioptions-=r                 " Don't show right scrollbar
 
 " Save all open buffers when MacVim loses focus
-au FocusLost * wa
+au FocusLost * silent! wa
 
 if has("gui_macvim")
   macmenu &File.Open\ Tab\.\.\. key=<nop>
